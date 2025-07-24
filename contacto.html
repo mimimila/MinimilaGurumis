@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - MiniMila Gurumis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Patrick Hand', cursive;
+      background-color: #fef9f4;
+      color: #4b4b4b;
+    }
+    header {
+      background-color: #ffeef3;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    header img {
+      height: 100px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #d67ca4;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #aad9d0;
+    }
+    h1 {
+      text-align: center;
+      color: #d67ca4;
+      margin-top: 40px;
+    }
+    form {
+      max-width: 500px;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 2px solid #d67ca4;
+      border-radius: 8px;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 1em;
+    }
+    .btn {
+      background-color: #aad9d0;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 12px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #93c5bc;
+    }
+    footer {
+      background-color: #ffeef3;
+      padding: 30px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #6a6a6a;
+    }
+    footer a {
+      color: #d67ca4;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="111.png" alt="MiniMila Gurumis Logo">
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html" target="_blank">Catálogo</a>
+      <a href="index.html#personalizados">Personalizados</a>
+      <a href="contacto.html" target="_blank">Contacto</a>
+    </nav>
+  </header>
+
+  <h1>📬 Contáctame</h1>
+  <form onsubmit="enviarCorreo(); return false;">
+    <input type="text" id="nombre" placeholder="Tu nombre" required>
+    <input type="email" id="correo" placeholder="Tu correo" required>
+    <input type="text" id="asunto" placeholder="Asunto" required>
+    <textarea id="mensaje" rows="5" placeholder="Tu consulta" required></textarea>
+    <button type="submit" class="btn">Enviar</button>
+  </form>
+
+  <footer>
+    MiniMila Gurumis © 2025 — Con lanita y cariño 🧶<br>
+    <a href="https://www.instagram.com/minimila_gurumis" target="_blank">Instagram</a> |
+    <a href="https://wa.me/569XXXXXXXX" target="_blank">Whatsapp</a>
+  </footer>
+
+  <script>
+    function enviarCorreo() {
+      const nombre = document.getElementById('nombre').value;
+      const correo = document.getElementById('correo').value;
+      const asunto = document.getElementById('asunto').value;
+      const mensaje = document.getElementById('mensaje').value;
+
+      const cuerpo = `Nombre: ${nombre}%0ACorreo: ${correo}%0A%0A${mensaje}`;
+      const url = `https://mail.google.com/mail/?view=cm&fs=1&to=milacrisostomo03@gmail.com&su=${encodeURIComponent(asunto)}&body=${cuerpo}`;
+      
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>

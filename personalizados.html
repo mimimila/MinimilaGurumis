@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiniMila Gurumis</title>
+  <!-- Fuente Patrick Hand desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Patrick Hand', cursive;
+      background-color: #fef9f4;
+      color: #4b4b4b;
+    }
+    header {
+      background-color: #ffeef3;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    header img {
+      height: 100px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #d67ca4;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #aad9d0;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #fff8f9;
+    }
+    .hero h1 {
+      color: #d67ca4;
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background-color: #aad9d0;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #93c5bc;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      color: #d67ca4;
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .product {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 20px;
+      max-width: 250px;
+      transition: transform 0.3s;
+    }
+    .product:hover {
+      transform: scale(1.03);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    footer {
+      background-color: #ffeef3;
+      padding: 30px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #6a6a6a;
+    }
+    footer a {
+      color: #d67ca4;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="111.png" alt="MiniMila Gurumis Logo">
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html" target="_blank">Catálogo</a>
+      <a href="index.html#personalizados">Personalizados</a>
+      <a href="contacto.html" target="_blank">Contacto</a>
+    </nav>
+  </header>
+  <section class="section" id="perzonalizados">
+    <h2> ¡Personaliza tus Amigurumis!</h2>
+    <div class="products">
+  <a href="novios.html" style="text-decoration: none; color: inherit;">
+    <div class="product">
+      <img src="novios.jpeg" alt="novios">
+      <p>Pareja personalizable</p>
+      <p>Precio Variable</p>
+    </div>
+  </a>
+
+  <a href="producto-gatita.html" style="text-decoration: none; color: inherit;">
+    <div class="product">
+      <img src="tortuga.jpeg" alt="Gatita Lía">
+      <p>Gatita Lía (personalizable)</p>
+      <p>$5000</p>
+    </div>
+  </a>
+</div>
+  </section>
+  
+
+ <footer>
+    MiniMila Gurumis © 2025 — Hecho con lanita y cariño 🧶<br>
+    <a href="https://www.instagram.com/minimila_gurumis" target="_blank">Instagram</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiniMila Gurumis</title>
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" href="111.png" type="image/png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Patrick Hand', cursive;
+      background-color: white;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: white;
+      min-height: 100vh;
+      position: relative;
+      z-index: 2;
+      box-sizing: border-box;
+      padding-bottom: 100px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 1;
+      background:
+        url('fondo.png') left top no-repeat,
+        url('fondo.png') right top no-repeat;
+      background-size: auto 100vh;
+      background-position: left center, right center;
+      background-repeat: no-repeat, no-repeat;
+    }
+    header, footer {
+      background-color: #ffeef3;
+      width: 100vw;
+      position: relative;
+      z-index: 3;
+      box-sizing: border-box;
+      padding-left: calc((100vw - 1000px) / 2);
+      padding-right: calc((100vw - 1000px) / 2);
+    }
+    header {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    header img {
+      height: 100px;
+    }
+    .titulo-tienda {
+      font-size: 2.2em;
+      color: #d67ca4;
+      margin-top: 10px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #d67ca4;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #aad9d0;
+    }
+    footer {
+      padding: 30px 0;
+      text-align: center;
+      font-size: 0.9em;
+      color: #6a6a6a;
+    }
+    footer a {
+      color: #d67ca4;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #fff8f9;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      color: #d67ca4;
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background-color: #aad9d0;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #93c5bc;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      color: #d67ca4;
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+    .carousel {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .carousel a {
+      display: block;
+      flex: 1 1 22%;
+      max-width: 22%;
+      text-decoration: none;
+    }
+    .carousel img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .carousel img:hover {
+      transform: scale(1.05);
+    }
+    @media (max-width: 768px) {
+      .carousel a {
+        max-width: 45%;
+      }
+    }
+    @media (max-width: 480px) {
+      .carousel a {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="111.png" alt="MiniMila Gurumis Logo" />
+    <div class="titulo-tienda">MiniMila Gurumis</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html" target="_blank">Catálogo</a>
+      <a href="personalizados.html" target="_blank">Personalizados</a>
+      <a href="contacto.html" target="_blank">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="hero" id="inicio">
+      <h1>¡Amigurumis hechos a mano desde Chillán! 🧶</h1>
+      <p>Descubre monitos tiernos y personalizados con mucho amor</p>
+      <a class="btn" href="catalogo.html" target="_blank">Ver modelos</a>
+      <a class="btn" href="contacto.html" target="_blank">Haz tu pedido</a>
+    </section>
+
+    <section class="section" id="catalogo">
+      <h2><a href="catalogo.html" target="_blank" style="color: #d67ca4; text-decoration: none;">🧸 Catálogo</a></h2>
+      <div class="carousel">
+        <a href="tortuguita.html"><img src="amigurumi1.jpeg" alt="Tortuguita Margarita" /></a>
+        <a href="malenia.html"><img src="malenia.png" alt="malenia" /></a>
+        <a href="batman.html"><img src="batman.png" alt="Batman" /></a>
+        <a href="taylor.html"><img src="taylorswift.png" alt="Taylor Swift" /></a>
+      </div>
+    </section>
+
+    <section class="section" id="personalizados">
+      <h2><a href="personalizados.html" target="_blank" style="color: #d67ca4; text-decoration: none;">🌼 Hechos a Pedido</a></h2>
+      <p>Cuéntame tu idea y la convierto en amigurumi. ¡Perfecto para regalos especiales!</p>
+      <p>Elige colores, personajes y tamaños. ¡Todo hecho con mucho cariño!</p>
+    </section>
+  </div>
+
+  <footer>
+    MiniMila Gurumis © 2025 — Hecho con lanita y cariño 🧶<br />
+    <a href="https://www.instagram.com/minimila_gurumis" target="_blank">@minimila_gurumis</a>
+  </footer>
+</body>
+</html>
